@@ -14,7 +14,7 @@ def speak(str1):
     speak=Dispatch(("SAPI.SpVoice"))
     speak.Speak(str1)
 
-video=cv2.VideoCapture(0)
+video=cv2.VideoCapture(0) #0 for webcamera activation 
 facedetect=cv2.CascadeClassifier('haarcascade_frontalface_default .xml')
 
 with open('data/names.pkl', 'rb') as w:
