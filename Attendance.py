@@ -54,7 +54,7 @@ while True:
     k=cv2.waitKey(1)
     if k==ord('o'):
         speak("Attendance Taken..")
-        time.sleep(5)
+        time.sleep(5) #SLEEP FUNCTION
         if exist:
             with open("Attendance/Attendance_" + date + ".csv", "+a") as csvfile:
                 writer=csv.writer(csvfile)
